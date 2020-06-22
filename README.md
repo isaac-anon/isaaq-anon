@@ -19,7 +19,9 @@ To use this code you will need:
 * googledrivedownloader 0.4.0
 * ~75GB free space disk (for executing all the experiments)
 
-## How to run the experiments:
+## How to run the experiments
+
+In this repository, we structure our experimental pipeline in three simple steps. First, we download all the datasets we use for pre-training (RACE, OpenBookQA, ARC, VQA, AI2D) from their original repositories. Then, we pre-train our model on such datasets and train our solvers on the TQA dataset using such pre-trainings. Note that we produce three different solvers for each TQA sub-task (true/false questions, text multiple choice questions and diagram multiple choice questions). Each solver results from training on the background information retrieved using three different methods, based on: information retrieval (IR), nex-sentence prediction (NSP) and nearest neighbors (NN), respectively. During training, the scripts will show the accuracies obtained by each model agaisnt the validation set. Finally, for each TQA sub-task we ensemble our solvers and execute against the TQA test set.
 
 **1. Execute the script download_pretrainings.py and download_materials.py**
 
@@ -59,8 +61,7 @@ optional arguments:
 
 required arguments:
   -r {IR,NSP,NN}, --retrieval {IR,NSP,NN}
-                        retrieval solver for the contexts. Options: IR, NSP or
-                        NN
+                        Method used to retrieve background information for training. Options: IR, NSP or NN
 
 ```
 
@@ -94,8 +95,7 @@ optional arguments:
 
 required arguments:
   -r {IR,NSP,NN}, --retrieval {IR,NSP,NN}
-                        retrieval solver for the contexts. Options: IR, NSP or
-                        NN
+                        Method used to retrieve background information for training. Options: IR, NSP or NN
 ```
 
 **Diagram Multiple Choice Questions**:
@@ -123,8 +123,7 @@ optional arguments:
 
 required arguments:
   -r {IR,NSP,NN}, --retrieval {IR,NSP,NN}
-                        retrieval solver for the contexts. Options: IR, NSP or
-                        NN
+                        Method used to retrieve background information for training. Options: IR, NSP or NN
 ```
 
 **2. Ensemble the different solvers for each TQA subtask.**
