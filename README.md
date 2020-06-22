@@ -132,7 +132,7 @@ required arguments:
                         Method used to retrieve background information for training. Options: IR, NSP or NN
 ```
 
-**Step 3. **Combine the resulting solvers in a single ISAAQ ensemble for each TQA subtask and execute**
+**Step 3. Combine the resulting solvers in a single ISAAQ ensemble for each TQA subtask and execute**
 
 **True/False Questions Solvers Ensemble**:
 
