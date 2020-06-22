@@ -1,6 +1,6 @@
-# ISAAQ - Mastering Textbook Questions with Pre-trained Transformersand Bottom-Up and Top-Down Attention
+# ISAAQ - Mastering Textbook Questions with Pre-trained Transformers and Bottom-Up and Top-Down Attention
 
-## Materials to reproduce the experiments and results in **ISAAQ - Mastering Textbook Questions with Pre-trained Transformersand Bottom-Up and Top-Down Attention.**
+## Code and materials to reproduce the experiments and results in the paper
 
 Textbook Question Answering is a complex task in the intersection of Machine Comprehension and Visual Question Answering that requires reasoning with multimodal information from text and diagrams. For the first time, this paper taps on the potential of transformer language models and bottom-up and top-down attention to tackle the language and visual understanding challenges this task entails. Rather than training a language-visual transformer from scratch we rely on pre-trained language models and fine-tuning along the whole TQA pipeline. We add bottom-up and top-down attention to identify regions of interest corresponding to diagram constituents and their relationships, improving the selection of relevant visual information for each question. Our system ISAAQ reports unprecedented success in all TQA question types, with accuracies of 80.26%, 70.92% and 55.09% on true/false, text-only and diagram multiple choice questions. ISAAQ also demonstrates its broad applicability, obtaining state-of-the-art results in other demanding datasets. In this repository we provide the necessary code and data to reproduce the experiments related to such task that are presented in the paper.
 
