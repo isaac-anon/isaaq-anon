@@ -256,7 +256,7 @@ The TQA dataset can be downloaded from [here](https://ai2-datasets.s3-us-west-2.
 **Text Multiple choice qestions**
 - [The Large-scale ReAding Comprehension Dataset From Examinations (RACE).](http://www.cs.cmu.edu/~glai1/data/race/)
 - [The OpenBookQA dataset.](https://allenai.org/data/open-book-qa)
-- [The ARC-Easy and ARC-Challenge datasets. Available here.](https://allenai.org/data/arc)
+- [The ARC-Easy and ARC-Challenge datasets.](https://allenai.org/data/arc)
 
 **Diagram Multiple choice qestions**
 - [VQA v1 abstract scenes.](https://visualqa.org/vqa_v1_download.html)
