@@ -28,9 +28,9 @@ python download_materials.py
 python download_pretrainings.py
 ```
 
-**2. Use the different python scripts to execute our models against the TQA tasks.**
+**2. Use the different python scripts to execute our models in TQA.**
 
-**True/False model**:
+**True/False Questions**:
 
 ```
 usage: tqa_tf_sc.py [-h] -r {IR,NSP,NN} [-d {gpu,cpu}] [-p PRETRAININGS]
@@ -62,7 +62,7 @@ required arguments:
 
 ```
 
-**Text Multiple Choice model**:
+**Text Multiple Choice Questions**:
 
 ```
 usage: tqa_ndq_mc.py [-h] -r {IR,NSP,NN} [-t {ndq,dq}] [-d {gpu,cpu}]
@@ -96,7 +96,7 @@ required arguments:
                         NN
 ```
 
-**Diagram Multiple Choice model**:
+**Diagram Multiple Choice Questions**:
 
 ```
 usage: tqa_dq_mc.py [-h] -r {IR,NSP,NN} [-d {gpu,cpu}] [-p PRETRAININGS]
@@ -125,9 +125,9 @@ required arguments:
                         NN
 ```
 
-**2. Ensemble different models.**
+**2. Ensemble the different solvers for each TQA subtask.**
 
-**True/False Ensembling**:
+**True/False Questions Solvers Ensemble**:
 
 ```
 usage: tqa_tf_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
@@ -149,7 +149,7 @@ optional arguments:
                         size of the batches. Default: 512
 ```
 
-**Text Multiple Choice Ensembling**:
+**Text Multiple Choice Questions Solvers Ensemble**:
 
 ```
 usage: tqa_ndq_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
@@ -171,7 +171,7 @@ optional arguments:
                         size of the batches. Default: 512
 ```
 
-**Diagram Multiple Choice Ensembling**:
+**Diagram Multiple Choice Questions Solvers Ensemble**:
 
 ```
 usage: tqa_dq_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
