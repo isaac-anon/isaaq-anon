@@ -42,8 +42,16 @@ Use the following python scripts to train the ISAAQ solvers on TQA:
 
 **True/False Questions**:
 
+To train and save models with the different solvers:
 ```
-usage: tqa_tf_sc.py [-h] -r {IR,NSP,NN} [-d {gpu,cpu}] [-p PRETRAININGS]
+python tqa_tf_sc.py -r IR -s
+python tqa_tf_sc.py -r NSP -s
+python tqa_tf_sc.py -r NN -s
+```
+
+Usage:
+```
+tqa_tf_sc.py [-h] -r {IR,NSP,NN} [-d {gpu,cpu}] [-p PRETRAININGS]
                     [-b BATCHSIZE] [-x MAXLEN] [-l LR] [-e EPOCHS] [-s]
 
 optional arguments:
@@ -73,8 +81,23 @@ required arguments:
 
 **Text Multiple Choice Questions**:
 
+To train and save text models with the different solvers in NDQ questions:
 ```
-usage: tqa_ndq_mc.py [-h] -r {IR,NSP,NN} [-t {ndq,dq}] [-d {gpu,cpu}]
+python tqa_ndq_mc.py -r IR -s
+python tqa_ndq_mc.py -r NSP -s
+python tqa_ndq_mc.py -r NN -s
+```
+
+To train and save text models with the different solvers in DQ questions:
+```
+python tqa_ndq_mc.py -r IR -t dq -s
+python tqa_ndq_mc.py -r NSP -t dq -s
+python tqa_ndq_mc.py -r NN -t dq -s
+```
+
+Usage:
+```
+tqa_ndq_mc.py [-h] -r {IR,NSP,NN} [-t {ndq,dq}] [-d {gpu,cpu}]
                      [-p PRETRAININGS] [-b BATCHSIZE] [-x MAXLEN] [-l LR]
                      [-e EPOCHS] [-s]
 
@@ -106,8 +129,16 @@ required arguments:
 
 **Diagram Multiple Choice Questions**:
 
+To train and save diagram-text models with the different solvers in DQ questions:
 ```
-usage: tqa_dq_mc.py [-h] -r {IR,NSP,NN} [-d {gpu,cpu}] [-p PRETRAININGS]
+python tqa_dq_mc.py -r IR -s
+python tqa_dq_mc.py -r NSP -s
+python tqa_dq_mc.py -r NN -s
+```
+
+Usage:
+```
+tqa_dq_mc.py [-h] -r {IR,NSP,NN} [-d {gpu,cpu}] [-p PRETRAININGS]
                     [-b BATCHSIZE] [-x MAXLEN] [-l LR] [-e EPOCHS] [-s]
 
 optional arguments:
@@ -137,7 +168,12 @@ required arguments:
 **True/False Questions Solvers Ensemble**:
 
 ```
-usage: tqa_tf_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
+python tqa_tf_ensembler.py
+```
+
+Usage:
+```
+tqa_tf_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
                            [-x MAXLEN] [-b BATCHSIZE]
 
 optional arguments:
@@ -159,7 +195,12 @@ optional arguments:
 **Text Multiple Choice Questions Solvers Ensemble**:
 
 ```
-usage: tqa_ndq_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
+python tqa_ndq_ensembler.py
+```
+
+Usage:
+```
+tqa_ndq_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
                             [-x MAXLEN] [-b BATCHSIZE]
 
 optional arguments:
@@ -181,7 +222,12 @@ optional arguments:
 **Diagram Multiple Choice Questions Solvers Ensemble**:
 
 ```
-usage: tqa_dq_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
+python tqa_dq_ensembler.py
+```
+
+Usage:
+```
+tqa_dq_ensembler.py [-h] [-d {gpu,cpu}] [-p PRETRAININGSLIST]
                            [-x MAXLEN] [-b BATCHSIZE]
 
 optional arguments:
@@ -205,13 +251,13 @@ optional arguments:
 
 ## Datasets
 
-The TQA dataset can be downloaded from here. In addition, the datasets used for pre-training are the following:
+The TQA dataset can be downloaded from [here](https://ai2-datasets.s3-us-west-2.amazonaws.com/tqa/tqa_train_val_test.zip). In addition, the datasets used for pre-training are the following:
 
 **Text Multiple choice qestions**
-- The Large-scale ReAding Comprehension Dataset From Examinations (RACE). 
-- The OpenBookQA dataset.
-- The ARC-Easy and ARC-Challenge datasets. Available here.
+- [The Large-scale ReAding Comprehension Dataset From Examinations (RACE).](http://www.cs.cmu.edu/~glai1/data/race/)
+- [The OpenBookQA dataset.](https://allenai.org/data/open-book-qa)
+- [The ARC-Easy and ARC-Challenge datasets. Available here.](https://allenai.org/data/arc)
 
 **Diagram Multiple choice qestions**
-- VQA abstract scenes.
-- The AI2D dataset for diagram understanding.
+- [VQA v1 abstract scenes.](https://visualqa.org/vqa_v1_download.html)
+- [The AI2D dataset for diagram understanding.](https://prior.allenai.org/projects/diagram-understanding)
