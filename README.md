@@ -21,7 +21,11 @@ To use this code you will need:
 
 ## How to run the experiments
 
-We structure our experimental pipeline in three simple steps. First, we download the weights resulting from pre-training on the RACE, OpenBookQA, ARC, VQA and AI2D datasets and train the ISAAQ solvers on the TQA dataset using such pre-trainings. Note that we produce three different solvers for each of the TQA sub-tasks (true/false questions, text multiple choice questions and diagram multiple choice questions). Each solver results from training on the background information that we previously retrieved from the TQA dataset using one of three different methods, based on conventional information retrieval techniques (IR), transformer-based next-sentence prediction (NSP) and transformer-based nearest neighbors (NN), respectively . During training, the scripts will show the accuracies obtained by each model agaisnt the validation set. Finally, for each TQA sub-task we ensemble our solvers and execute against the TQA test set.
+The following scripts structure our experimental pipeline in three simple steps. 
+
+1. Download the weights resulting from pre-training on the RACE, OpenBookQA, ARC, VQA and AI2D datasets. Note that the pre-training is done offline for time efficiency reasons.
+2. Train the ISAAQ solvers on the TQA dataset using such pre-trainings. As shown in the paper, we produce three different solvers for each of the TQA sub-tasks (true/false questions, text multiple choice questions and diagram multiple choice questions). Each solver results from training on the background information that we previously retrieved from the TQA dataset using one of three different methods, based on conventional information retrieval techniques (IR), transformer-based next-sentence prediction (NSP) and transformer-based nearest neighbors (NN), respectively. During training, the scripts will show the accuracies obtained by each model agaisnt the validation set. 
+3. Finally, for each TQA sub-task the solvers are combined in a single ensemble and executed against the TQA test set.
 
 **1. Execute the script download_pretrainings.py and download_materials.py**
 
