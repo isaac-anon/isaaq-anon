@@ -36,7 +36,7 @@ python download_materials.py
 python download_pretrainings.py
 ```
 
-**Step 2. Train the ISAAQ solvers on the TQA dataset using such pre-trainings.**
+**Step 2: Train the ISAAQ solvers on the TQA dataset using such pre-trainings.**
 
 Use the following python scripts to train the ISAAQ solvers on TQA:
 
@@ -205,3 +205,13 @@ optional arguments:
 
 ## Datasets
 
+The TQA dataset can be downloaded from here. In addition, the datasets used for pre-training are the following:
+
+**Text Multiple choice qestions**
+- The Large-scale ReAding Comprehension Dataset From Examinations (RACE). 
+- OpenBookQA.
+- ARC-Easy and ARC-Challenge. Available here.
+
+**Diagram Multiple choice qestions**
+- VQA abstract scenes.
+- The AI2D dataset dor diagram understanding.
