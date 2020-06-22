@@ -209,9 +209,9 @@ The TQA dataset can be downloaded from here. In addition, the datasets used for 
 
 **Text Multiple choice qestions**
 - The Large-scale ReAding Comprehension Dataset From Examinations (RACE). 
-- OpenBookQA.
-- ARC-Easy and ARC-Challenge. Available here.
+- The OpenBookQA dataset.
+- The ARC-Easy and ARC-Challenge datasets. Available here.
 
 **Diagram Multiple choice qestions**
 - VQA abstract scenes.
-- The AI2D dataset dor diagram understanding.
+- The AI2D dataset for diagram understanding.
