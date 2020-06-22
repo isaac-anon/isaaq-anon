@@ -22,6 +22,7 @@ To use this code you will need:
 ## How to run the experiments:
 
 **1. Execute the script download_pretrainings.py and download_materials.py**
+
 This allows downloading the pretrained weights from other datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials.
 
 ```
