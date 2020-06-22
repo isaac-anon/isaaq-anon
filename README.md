@@ -81,14 +81,14 @@ required arguments:
 
 **Text Multiple Choice Questions**:
 
-To train and save text models with the different solvers in NDQ questions:
+To train and save text models with the solvers resulting from the different background information retrieval methods for text MC questions:
 ```
 python tqa_ndq_mc.py -r IR -s
 python tqa_ndq_mc.py -r NSP -s
 python tqa_ndq_mc.py -r NN -s
 ```
 
-To train and save text models with the different solvers in DQ questions:
+Likewise, training and saving text models for diagram MC questions:
 ```
 python tqa_ndq_mc.py -r IR -t dq -s
 python tqa_ndq_mc.py -r NSP -t dq -s
@@ -129,7 +129,8 @@ required arguments:
 
 **Diagram Multiple Choice Questions**:
 
-To train and save diagram-text models with the different solvers in DQ questions:
+To train and save diagram-text models with the solvers resulting from the different background information retrieval methods for diagram MC questions:
+
 ```
 python tqa_dq_mc.py -r IR -s
 python tqa_dq_mc.py -r NSP -s
