@@ -28,7 +28,7 @@ python download_materials.py
 python download_pretrainings.py
 ```
 
-**2. Use the different python scripts to execute our models in TQA.**
+**2. Use the different python scripts to execute ISAAQ models on TQA.**
 
 **True/False Questions**:
 
