@@ -27,16 +27,18 @@ The following scripts structure our experimental pipeline in three simple steps:
 2. **Train the ISAAQ solvers on the TQA dataset using such pre-trainings.** As shown in the paper, we produce three different solvers for each of the TQA sub-tasks (true/false questions, text multiple choice questions and diagram multiple choice questions). Each solver results from training on the background information that we previously retrieved from the TQA dataset using one of three different methods, based on conventional information retrieval techniques (IR), transformer-based next-sentence prediction (NSP) and transformer-based nearest neighbors (NN), respectively. During training, the scripts will show the accuracies obtained by each model agaisnt the validation set. 
 3. **Combine the resulting solvers in a single ensemble for each TQA subtask and execute** against the TQA test set.
 
-**1. Execute the script download_pretrainings.py and download_materials.py**
+**Step 1: Download the weights resulting from pre-training on RACE, OpenBookQA, ARC, VQA and AI2D.**
 
-These scripts allow downloading the pretrained weights from other datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
+Execute the scripts download_pretrainings.py and download_materials.py. These scripts allow downloading the pretrained weights from the datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
 
 ```
 python download_materials.py
 python download_pretrainings.py
 ```
 
-**2. Use the different python scripts to execute ISAAQ models on TQA.**
+**Step 2. Train the ISAAQ solvers on the TQA dataset using such pre-trainings.**
+
+Use the following python scripts to train the ISAAQ solvers on TQA:
 
 **True/False Questions**:
 
@@ -130,7 +132,7 @@ required arguments:
                         Method used to retrieve background information for training. Options: IR, NSP or NN
 ```
 
-**2. Ensemble the different solvers for each TQA subtask.**
+**Step 3. **Combine the resulting solvers in a single ISAAQ ensemble for each TQA subtask and execute**
 
 **True/False Questions Solvers Ensemble**:
 
