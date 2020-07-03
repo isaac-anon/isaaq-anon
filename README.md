@@ -29,12 +29,10 @@ The following scripts structure our experimental pipeline in three simple steps:
 
 **Step 1: Download the weights resulting from pre-training on RACE, OpenBookQA, ARC, VQA and AI2D.**
 
-Execute the scripts download_pretrainings.py and download_materials.py. These scripts allow downloading the pretrained weights from the datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
+Click in the next links in order to download the pretrained weights from the datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
 
-```
-python download_materials.py
-python download_pretrainings.py
-```
+[jsons.zip](https://drive.google.com/file/d/11QE4nwU3pVB_0Q5E45P-3wuuhcG1g3yH/view?usp=sharing)
+[checkpoints.zip](https://drive.google.com/file/d/1cQEjNIb11eOL4ZPKKvXPvdx9OVL324Zp/view?usp=sharing)
 
 **Step 2: Train the ISAAQ solvers on the TQA dataset using such pre-trainings.**
 
