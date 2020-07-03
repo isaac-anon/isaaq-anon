@@ -16,7 +16,6 @@ To use this code you will need:
 * Numpy 1.18.0
 * Pillow 6.2.1
 * Tqdm 4.36.0
-* googledrivedownloader 0.4.0
 * ~75GB free space disk (for executing all the experiments)
 
 ## How to run the experiments
@@ -32,6 +31,7 @@ The following scripts structure our experimental pipeline in three simple steps:
 Click in the next links in order to download the pretrained weights from the datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
 
 [jsons.zip](https://drive.google.com/file/d/11QE4nwU3pVB_0Q5E45P-3wuuhcG1g3yH/view?usp=sharing)
+
 [checkpoints.zip](https://drive.google.com/file/d/1cQEjNIb11eOL4ZPKKvXPvdx9OVL324Zp/view?usp=sharing)
 
 **Step 2: Train the ISAAQ solvers on the TQA dataset using such pre-trainings.**
