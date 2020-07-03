@@ -30,6 +30,8 @@ The following scripts structure our experimental pipeline in three simple steps:
 
 Download the next files with the pretrained weights from the datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
 
+[tqa_train_val_test.zip](https://s3.amazonaws.com/ai2-vision-textbook-dataset/dataset_releases/tqa/tqa_train_val_test.zip)
+
 [jsons.zip](https://drive.google.com/file/d/11QE4nwU3pVB_0Q5E45P-3wuuhcG1g3yH/view?usp=sharing)
 
 [checkpoints.zip](https://drive.google.com/file/d/1cQEjNIb11eOL4ZPKKvXPvdx9OVL324Zp/view?usp=sharing)
