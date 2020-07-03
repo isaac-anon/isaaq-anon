@@ -28,7 +28,7 @@ The following scripts structure our experimental pipeline in three simple steps:
 
 **Step 1: Download the weights resulting from pre-training on RACE, OpenBookQA, ARC, VQA and AI2D.**
 
-Download the next files with pretrained weights from the datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
+Download the next files with the pretrained weights from the datasets (RACE, OpenBookQA, ARC, VQA, AI2D) and the rest of materials:
 
 [jsons.zip](https://drive.google.com/file/d/11QE4nwU3pVB_0Q5E45P-3wuuhcG1g3yH/view?usp=sharing)
 
